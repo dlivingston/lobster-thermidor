@@ -4,11 +4,27 @@
   "description": "NPM tooling practice",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve-dev": "live-server src",
+    "build-site": "node scripts/build.js",
+    "cleanup": "node scripts/clean.js"
   },
   "author": "Don Livingston",
   "license": "MIT",
   "devDependencies": {
+    "live-server": "^1.2.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^4.5.3",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
     "live-server": "^1.2.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlivingston/lobster-thermidor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dlivingston/lobster-thermidor/issues"
+  },
+  "homepage": "https://github.com/dlivingston/lobster-thermidor#readme"
 }
