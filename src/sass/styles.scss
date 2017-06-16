@@ -1,1 +1,11 @@
 /*** Styles ***/
+$fa-font-path: "assets/fonts/font-awesome/" !default;
+@import 'vital';
+
+@import 'font-awesome';
+
+
+
+body {
+	background: #FFF;
+}

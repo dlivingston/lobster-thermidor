@@ -2,22 +2,34 @@
   "name": "lobster-thermidor",
   "version": "0.0.1",
   "description": "NPM tooling practice",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "serve-dev": "live-server src",
+    "postinstall": "cp -R node_modules/font-awesome-sass/assets/fonts src/assets/",
+    "start": "npm-run-all --parallel dev:*",
+    "dev:serve": "live-server src",
+    "dev:sass": "node-sass --watch src/sass/ --include-path node_modules/vital-css/dist/scss/ --output-style compact -o src/",
+    "build-css": "node-sass --include-path node_modules/vital-css/dist/scss/ --include-path node_modules/font-awesome-sass/assets/stylesheets/ --output-style compact src/sass/ -o src/",
+    "dev:js": "watchify -e src/scripts/scripts.js -d -o src/app.js",
     "build-site": "node scripts/build.js",
     "cleanup": "node scripts/clean.js"
   },
   "author": "Don Livingston",
   "license": "MIT",
   "devDependencies": {
+    "browserify": "^14.4.0",
     "live-server": "^1.2.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.3",
-    "rimraf": "^2.6.1"
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "uglify-js": "^3.0.15",
+    "watchify": "^3.9.0"
   },
   "dependencies": {
-    "live-server": "^1.2.0"
+    "angular": "^1.6.4",
+    "font-awesome-sass": "^4.7.0",
+    "normalize-scss": "^7.0.0",
+    "vital-css": "^2.2.1"
   },
   "repository": {
     "type": "git",
