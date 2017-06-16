@@ -807,7 +807,7 @@ img.largest { width: 7em; }
 
 /*! Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
 /* FONT PATH -------------------------- */
-@font-face { font-family: 'FontAwesome'; src: url("assets/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0"); src: url("assets/fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0#iefix") format("embedded-opentype"), url("assets/fonts/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("assets/fonts/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("assets/fonts/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("assets/fonts/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'FontAwesome'; src: url("assets/font-awesome/fontawesome-webfont.eot?v=4.7.0"); src: url("assets/font-awesome/fontawesome-webfont.eot?v=4.7.0#iefix") format("embedded-opentype"), url("assets/font-awesome/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("assets/font-awesome/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("assets/font-awesome/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("assets/font-awesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); font-weight: normal; font-style: normal; }
 
 .fa { display: inline-block; font: normal normal normal 14px/1 FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 

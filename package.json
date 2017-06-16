@@ -7,7 +7,7 @@
     "postinstall": "cp -R node_modules/font-awesome-sass/assets/fonts src/assets/",
     "start": "npm-run-all --parallel dev:*",
     "dev:serve": "live-server src",
-    "dev:sass": "node-sass --watch src/sass/ --include-path node_modules/vital-css/dist/scss/ --output-style compact -o src/",
+    "dev:sass": "node-sass --watch src/sass/ --include-path node_modules/vital-css/dist/scss/ --include-path node_modules/font-awesome-sass/assets/stylesheets/ --output-style compact -o src/",
     "build-css": "node-sass --include-path node_modules/vital-css/dist/scss/ --include-path node_modules/font-awesome-sass/assets/stylesheets/ --output-style compact src/sass/ -o src/",
     "dev:js": "watchify -e src/scripts/scripts.js -d -o src/app.js",
     "build-site": "node scripts/build.js",
